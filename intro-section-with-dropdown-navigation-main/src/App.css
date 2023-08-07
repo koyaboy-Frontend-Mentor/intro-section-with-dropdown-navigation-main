@@ -1,0 +1,70 @@
+/*GENERAL STYLES*/
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Epilogue', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+
+/*MAIN*/
+
+main .main-text-content {
+    padding: 0 1em;
+    text-align: center;
+}
+
+main .main-text-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.65em;
+}
+
+main .main-text-content .pyramid-text {
+    color: hsl(0, 0%, 41%);
+    margin-bottom: 1.35em;
+}
+
+main .main-text-content .pyramid-text p {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+main .main-image-container img {
+    width: 100%;
+}
+
+main .main-text-content button {
+    margin-bottom: 3em;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+    font-weight: 700;
+}
+
+main .main-text-content .clients {
+    display: flex;
+    gap: 2em;
+    padding-bottom: 3.5em;
+}
+
+main .clients div img {
+    width: 100%;
+}
