@@ -41,11 +41,20 @@ header .title {
 header .header-items {
     display: none;
     background-color: hsl(0, 0%, 98%);
-    width: 65%;
+    width: 60%;
     position: fixed;
     top: 0;
     right: 0;
     min-height: 100vh;
+    /* font-size: 0.1rem; */
+    padding-left: 0.5em;
+}
+
+header .header-items div,
+header .header-items a,
+.auth-buttons .login,
+.auth-buttons .register {
+    font-size: 0.85rem;
 }
 
 header .header-items .close-btn-container {
@@ -55,7 +64,7 @@ header .header-items .close-btn-container {
 }
 
 header .header-items .menu {
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 header .header-items .menu ul {
@@ -78,8 +87,21 @@ header .header-items button {
     gap: 0.8em;
 }
 
+
 .dropdown-content {
-    display: none;
+    gap: 1.35em;
+    margin-top: 1.4em;
+    margin-left: 1.5em;
+}
+
+.dropdown-content .feature-items {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+}
+
+.dropdown-content.company {
+    margin-bottom: 0.6em;
 }
 
 .dropdown div,
