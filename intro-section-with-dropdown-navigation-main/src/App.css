@@ -17,11 +17,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1em;
+    padding: 1em;
+}
+
+header .title {
+    margin: 0;
+    font-size: 2rem;
 }
 
 
 /*MAIN*/
+
+
+
+main .main-image-container img {
+    width: 100%;
+}
 
 main .main-text-content {
     padding: 0 1em;
@@ -29,7 +40,7 @@ main .main-text-content {
 }
 
 main .main-text-content h2 {
-    font-size: 2.2rem;
+    font-size: 8.5vw;
     margin-bottom: 0.65em;
 }
 
@@ -41,12 +52,8 @@ main .main-text-content .pyramid-text {
 main .main-text-content .pyramid-text p {
     padding: 0;
     margin: 0;
-    font-size: 1rem;
+    font-size: 4vw;
     line-height: 1.5em;
-}
-
-main .main-image-container img {
-    width: 100%;
 }
 
 main .main-text-content button {
@@ -55,16 +62,27 @@ main .main-text-content button {
     background-color: hsl(0, 0%, 8%);
     border: none;
     border-radius: 10px;
-    padding: 1em;
+    padding: 1em 1.5em;
     font-weight: 700;
+    font-size: 3.5vw;
 }
 
 main .main-text-content .clients {
     display: flex;
-    gap: 2em;
+    justify-content: space-between;
     padding-bottom: 3.5em;
 }
 
-main .clients div img {
+main .main-text-content .clients div {
+    width: 20%;
+}
+
+main,
+.main-text-content .clients div img {
     width: 100%;
 }
+
+
+/*Media Queries*/
+
+@media screen and (min-width: 800px) and (max-width: 1440px) {}
