@@ -27,7 +27,6 @@ a {
 /*HEADER*/
 
 /* Add these classes to your existing styles */
-
 .header-items.active {
     display: block;
 }
@@ -237,6 +236,15 @@ a:hover,
         justify-content: flex-start;
         padding: 1em 2em;
     }
+
+    .header-items.active {
+        display: flex
+    }
+
+    .overlay.active {
+        display: none;
+    }
+
 
     .hamburger-menu-container {
         display: none;
