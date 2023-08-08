@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from "react"
 
 export default function Header() {
-
     const [features, setFeatures] = useState(false)
     const [company, setCompany] = useState(false)
     const [featuresDropdownArrow, setFeaturesDropdownArrow] = useState(false)
@@ -14,15 +13,28 @@ export default function Header() {
     const featuresArrowRef = useRef(null)
     const companyArrowRef = useRef(null)
 
+    // const openMenu = () => {
+    //     MenuRef.current.style.display = "block"
+    //     overlayRef.current.style.display = "block"
+    // }
+
+    // const closeMenu = () => {
+    //     MenuRef.current.style.display = "none"
+    //     overlayRef.current.style.display = "none"
+    // }
+
     const openMenu = () => {
-        MenuRef.current.style.display = "block"
-        overlayRef.current.style.display = "block"
-    }
+        MenuRef.current.classList.add("active");
+        overlayRef.current.classList.add("active");
+    };
 
     const closeMenu = () => {
-        MenuRef.current.style.display = "none"
-        overlayRef.current.style.display = "none"
-    }
+        MenuRef.current.classList.remove("active");
+        overlayRef.current.classList.remove("active");
+    };
+
+
+
 
     const openDropdown = (dropdownType) => {
         if (dropdownType === "features") {
@@ -62,7 +74,7 @@ export default function Header() {
 
     return (
         <>
-            <div className='overlay' ref={overlayRef}></div>
+            <div className={`overlay ${MenuRef.current ? "active" : ""}`} ref={overlayRef}></div>
             <header>
                 <h2 className="title">snap</h2>
 
@@ -70,7 +82,7 @@ export default function Header() {
                     <img src="./images/icon-menu.svg" alt="MENU" className="hamburger-menu" />
                 </div>
 
-                <div className="header-items" ref={MenuRef}>
+                <div className={`header-items ${MenuRef.current ? "active" : ""}`} ref={MenuRef}>
                     <div className="close-btn-container" onClick={closeMenu}>
                         <img src="./images/icon-close-menu.svg" alt="close-btn" />
                     </div>

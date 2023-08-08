@@ -26,6 +26,17 @@ a {
 
 /*HEADER*/
 
+/* Add these classes to your existing styles */
+
+.header-items.active {
+    display: block;
+}
+
+.overlay.active {
+    display: block;
+}
+
+
 header {
     display: flex;
     align-items: center;
@@ -241,7 +252,6 @@ a:hover,
 
     header .header-items {
         display: flex;
-        background: none;
         min-height: fit-content;
         position: relative;
         align-items: center;
@@ -313,7 +323,7 @@ a:hover,
 
 
     main .main-text-content h2 {
-        font-size: 6vw;
+        font-size: 5.9vw;
         margin-bottom: 0.65em;
     }
 

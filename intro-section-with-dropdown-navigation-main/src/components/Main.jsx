@@ -16,7 +16,7 @@ export default function Main() {
     }, []);
 
     // Determine which image source to use based on screen width
-    const imageSrc = windowWidth >= 800 && windowWidth <= 1440
+    const imageSrc = windowWidth >= 950 && windowWidth <= 1440
         ? "./images/image-hero-desktop.png"
         : "./images/image-hero-mobile.png";
     return (
