@@ -92,7 +92,7 @@ export default function Header() {
                                 <li>
                                     <div className="dropdown" onClick={() => openDropdown("features")}>
                                         <div> Features</div>
-                                        <img src="./images/icon-arrow-down.svg" alt="arrow-down" ref={featuresArrowRef} />
+                                        <img src="/images/icon-arrow-down.svg" alt="arrow-down" ref={featuresArrowRef} />
                                     </div>
 
                                     <div className="dropdown-content features" ref={featuresDropdownRef}>
