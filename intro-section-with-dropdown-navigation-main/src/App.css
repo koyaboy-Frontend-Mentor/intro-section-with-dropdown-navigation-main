@@ -38,6 +38,10 @@ header .title {
     font-size: 2rem;
 }
 
+header .hamburger-menu-container {
+    cursor: pointer;
+}
+
 header .header-items {
     display: none;
     background-color: hsl(0, 0%, 98%);
@@ -61,6 +65,7 @@ header .header-items .close-btn-container {
     position: absolute;
     right: 8%;
     top: 3%;
+    cursor: pointer;
 }
 
 header .header-items .menu {
@@ -85,6 +90,7 @@ header .header-items button {
     display: flex;
     align-items: center;
     gap: 0.8em;
+    cursor: pointer;
 }
 
 
@@ -115,6 +121,10 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 0.8em;
+}
+
+.auth-buttons button {
+    cursor: pointer;
 }
 
 .auth-buttons .login {
@@ -195,7 +205,108 @@ main,
 
     /*Header*/
 
+    header {
+        justify-content: flex-start;
+        padding: 1em 2em;
+    }
+
     .hamburger-menu-container {
         display: none;
+    }
+
+    .close-btn-container {
+        display: none;
+    }
+
+    header .title {
+        margin-right: 1.7em;
+    }
+
+    header .header-items {
+        display: flex;
+        background: none;
+        min-height: fit-content;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header .header-items .menu {
+        margin-top: 0;
+    }
+
+    header .header-items .menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5em;
+    }
+
+    .auth-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .auth-buttons .register {
+        padding: 0.65em 2em;
+    }
+
+    /*Main*/
+
+    div.main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        display: flex;
+        width: 80%;
+        margin: 4em 0;
+        gap: 4em;
+    }
+
+
+    main .main-text-content {
+        order: 1;
+        width: 56%;
+        text-align: left;
+    }
+
+    main .main-image-container {
+        align-self: stretch;
+        width: 44%;
+        order: 2;
+    }
+
+
+    main .main-text-content h2 {
+        font-size: 6vw;
+        margin-bottom: 0.65em;
+    }
+
+    main .main-text-content .pyramid-text {
+        width: 85%;
+        margin-bottom: 3em;
+    }
+
+    main .main-text-content .pyramid-text p {
+        font-size: 1.3vw;
+        display: inline;
+    }
+
+    main .main-text-content button {
+        border-radius: 15px;
+        font-size: 1.35vw;
+    }
+
+    main .main-text-content .clients {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 2.5em;
+    }
+
+    main .main-text-content .clients div {
+        width: 20%;
     }
 }

@@ -65,6 +65,7 @@ export default function Header() {
             <div className='overlay' ref={overlayRef}></div>
             <header>
                 <h2 className="title">snap</h2>
+
                 <div className="hamburger-menu-container" onClick={openMenu}>
                     <img src="./images/icon-menu.svg" alt="MENU" className="hamburger-menu" />
                 </div>
