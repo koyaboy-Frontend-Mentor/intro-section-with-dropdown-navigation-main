@@ -83,7 +83,7 @@ export default function Header() {
                                         <img src="./images/icon-arrow-down.svg" alt="arrow-down" ref={featuresArrowRef} />
                                     </div>
 
-                                    <div className="dropdown-content" ref={featuresDropdownRef}>
+                                    <div className="dropdown-content features" ref={featuresDropdownRef}>
                                         <div className="feature-items">
                                             <img src="./images/icon-todo.svg" alt="Todo img" />
                                             <a href="/">Todo List</a>
